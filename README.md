@@ -1,1 +1,1 @@
-#Python static site generator
+# Python static site generator
