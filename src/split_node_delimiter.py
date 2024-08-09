@@ -14,15 +14,10 @@ def split_nodes_delimiter(old_nodes, delimiter, text_type):
                     if words[i] == "":
                         continue
                     if i % 2 != 0:
-                        print("entreaca ", words[i])
                         newList.append(TextNode(words[i], text_type, node.url))
                     else:
-                        print("entreaca else ", words[i])
-
                         newList.append(TextNode(words[i], text_type_text, node.url))
     
-
-    print("Inside function", newList)
 
     return newList
 
