@@ -1,6 +1,8 @@
 from textnode import TextNode, text_type_text, text_type_link, text_type_italic, text_type_image, text_type_code, text_type_bold
 from htmlnode import HTMLNode, LeafNode, ParentNode
 from split_node_delimiter import split_nodes_delimiter
+from extract_markdown_images import extract_markdown_images
+from extract_markdown_links import extract_markdown_links
 
 
 def main():
@@ -21,6 +23,8 @@ def main():
 
     new_nodes = split_nodes_delimiter([node, code], "`", text_type_code)
 
-    print(new_nodes)
+    #print(new_nodes)
+
+
 
 main()
